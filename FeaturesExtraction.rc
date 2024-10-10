@@ -1,16 +1,16 @@
 ######################################
-# GV_morpho_Lent2
+# FeaturesExtraction
 ######################################
 
-module -name "GV_morpho_Lent2" \
+module -name "FeaturesExtraction" \
         -package "hxscriptobj" \
         -primary HxScalarField3 \
         -icon "TVDefScriptObject" \
         -category "{Image Segmentation}" \
         -check {[ $PRIMARY getTypeId ] != "HxUniformLabelField3"} \
         -proc {
-            set this [[create HxScriptObject] setLabel "GV_morpho_Lent2"]
-            $this script setValue $AMIRA_ROOT/share/script-objects/GV_morpho_Lent2.scro
+            set this [[create HxScriptObject] setLabel "FeaturesExtraction"]
+            $this script setValue $AMIRA_ROOT/share/script-objects/FeaturesExtraction.scro
             if { [exists $PRIMARY] } {
                 $this setVar reconstructedFromNetwork 0
                 $this data connect $PRIMARY
