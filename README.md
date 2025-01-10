@@ -21,7 +21,7 @@ Dependencies
 
     The script files FeaturesExtraction.scro and FeaturesExtraction.scro should be installed inside script folder of avizo program for example "C:/Program Files/Avizo-9.0.1/share/script-objects/".
     
-    After loading the tomographic image, the processing module can be found by:
+    After loading the tomographic image in AVIZO, the processing module can be found by:
   
     1.1- Right-click on the image
     
